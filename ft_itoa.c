@@ -6,7 +6,7 @@
 /*   By: cavan-vl <cavan-vl@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2023/10/18 18:02:12 by cavan-vl      #+#    #+#                 */
-/*   Updated: 2023/11/04 21:46:31 by cavan-vl      ########   odam.nl         */
+/*   Updated: 2023/11/07 13:53:36 by cavan-vl      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -45,7 +45,7 @@ char	*ft_itoa(int n)
 
 	if (n == -2147483648)
 		return (ft_strdup("-2147483648"));
-	str = malloc ((n_count(n) + 1) * sizeof(char));
+	str = ft_calloc ((n_count(n) + 1), sizeof(char));
 	if (str == NULL)
 		return (NULL);
 	i = n_count(n) - 1;
@@ -63,4 +63,9 @@ char	*ft_itoa(int n)
 		i--;
 	}
 	return (str);
+}
+
+int	main()
+{
+	ft_itoa(-1004);
 }
