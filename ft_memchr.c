@@ -6,7 +6,7 @@
 /*   By: cavan-vl <cavan-vl@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2023/10/16 13:11:34 by cavan-vl      #+#    #+#                 */
-/*   Updated: 2023/11/04 21:21:42 by cavan-vl      ########   odam.nl         */
+/*   Updated: 2023/11/07 16:07:57 by cavan-vl      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,16 +14,13 @@
 
 void	*ft_memchr(const void *s, int c, size_t n)
 {
-	unsigned char	*buf;
-	size_t			i;
+	size_t	i;
 
-	buf = (unsigned char *)s;
 	i = 0;
-	while (buf && i < n)
+	while (i < n)
 	{
-		if (*buf == (unsigned char)c)
-			return (buf);
-		buf++;
+		if (((unsigned char *)s)[i] == (unsigned char)c)
+			return ((unsigned char *)s + i);
 		i++;
 	}
 	return (NULL);
