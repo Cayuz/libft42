@@ -6,7 +6,7 @@
 /*   By: cavan-vl <cavan-vl@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2023/10/18 18:02:12 by cavan-vl      #+#    #+#                 */
-/*   Updated: 2023/11/07 13:53:36 by cavan-vl      ########   odam.nl         */
+/*   Updated: 2023/11/07 15:18:45 by cavan-vl      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -65,7 +65,7 @@ char	*ft_itoa(int n)
 	return (str);
 }
 
-int	main()
-{
-	ft_itoa(-1004);
-}
+// int	main()
+// {
+// 	ft_itoa(-1004);
+// }
