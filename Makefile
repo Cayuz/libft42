@@ -1,6 +1,8 @@
 NAME		:= libft.a
 
-INCLUDE		:= inc/libft.h
+INCLUDE		:=	inc/libft.h	\
+				inc/ft_printf.h \
+				inc/get_next_line.h \
 
 CC			:= cc
 CFLAGS		:= -Wall -Werror -Wextra
@@ -14,7 +16,7 @@ SRC_LIST	:= libft/list_fts/
 SRC_PRINTF	:= ft_printf/
 SRC_GNL		:= get_next_line/
 
-SRC_FILES	:=  $(addprefix $(SRC_CLASS), \
+SRC_FILES	:=	$(addprefix $(SRC_CLASS), \
 				ft_isalpha.c \
 				ft_isdigit.c \
 				ft_isalnum.c \
@@ -74,7 +76,7 @@ SRC_FILES	:=  $(addprefix $(SRC_CLASS), \
 				$(addprefix $(SRC_GNL), \
 				get_next_line.c \
 				get_next_line_utils.c \
-				)
+				) \
 
 OBJ_DIR		:= obj/
 OBJS		:= $(addprefix $(OBJ_DIR), $(SRC_FILES:.c=.o))
@@ -87,11 +89,9 @@ $(NAME): $(OBJS) $(INCLUDE)
 	@ echo "Libft is ready!"
 	@ ar rcs $(NAME) $?
 
-create_dirs: $(DIRS)
-	@mkdir -p $(addprefix $(OBJ_DIR), $(DIRS))
-
-$(OBJ_DIR)%.o: %.c create_dirs
-	@ $(CC) $(CFLAGS) -c -o $@ $<
+$(OBJ_DIR)%.o: %.c
+	@ mkdir -p $(addprefix $(OBJ_DIR), $(DIRS))
+	@ $(CC) $(CFLAGS) -c $< -o $@
 
 clean:
 	@ echo "Bye Bye object files!"
