@@ -6,7 +6,7 @@
 /*   By: cvan-vli <cvan-vli@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2023/01/16 11:36:10 by cvan-vli      #+#    #+#                 */
-/*   Updated: 2024/02/21 19:14:48 by cavan-vl      ########   odam.nl         */
+/*   Updated: 2024/02/22 17:26:01 by cavan-vl      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -71,7 +71,7 @@ void	*ft_calloc(size_t nmemb, size_t size)
 	return (p);
 }
 
-int	ft_strchr(char *s)
+int	ft_strchr_gnl(char *s)
 {
 	int	i;
 

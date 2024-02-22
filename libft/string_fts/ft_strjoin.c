@@ -6,7 +6,7 @@
 /*   By: cavan-vl <cavan-vl@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2023/10/18 15:56:52 by cavan-vl      #+#    #+#                 */
-/*   Updated: 2024/02/21 18:29:51 by cavan-vl      ########   odam.nl         */
+/*   Updated: 2024/02/22 17:23:08 by cavan-vl      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@ string, which is the result of the concatenation
 of ’s1’ and ’s2’.
 */
 
-char	*ft_strjoin(char const *s1, char const *s2)
+char	*ft_strjoin(char *s1, char *s2)
 {
 	char	*new;
 	int		len;

@@ -6,7 +6,7 @@
 /*   By: cavan-vl <cavan-vl@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2023/10/18 17:39:20 by cavan-vl      #+#    #+#                 */
-/*   Updated: 2024/02/21 17:52:15 by cavan-vl      ########   odam.nl         */
+/*   Updated: 2024/02/22 17:23:32 by cavan-vl      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@ Allocates (with malloc(3)) and returns a copy of
 from the beginning and the end of the string.
 */
 
-char	*ft_strtrim(char const *s1, char const *set)
+char	*ft_strtrim(char *s1, char *set)
 {
 	int	i;
 

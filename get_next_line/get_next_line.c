@@ -6,7 +6,7 @@
 /*   By: cvan-vli <cvan-vli@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2023/01/10 14:41:35 by cvan-vli      #+#    #+#                 */
-/*   Updated: 2024/02/21 17:43:40 by cavan-vl      ########   odam.nl         */
+/*   Updated: 2024/02/22 17:26:59 by cavan-vl      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -69,7 +69,7 @@ char	*read_buffs(char *static_buffer, int fd)
 	buffer = ft_calloc((BUFFER_SIZE + 1), sizeof(char));
 	if (!buffer)
 		return (NULL);
-	while (!ft_strchr(static_buffer))
+	while (!ft_strchr_gnl(static_buffer))
 	{
 		bytes_read = read(fd, buffer, BUFFER_SIZE);
 		if (bytes_read == -1)

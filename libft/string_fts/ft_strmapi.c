@@ -6,7 +6,7 @@
 /*   By: cavan-vl <cavan-vl@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2023/10/18 18:17:50 by cavan-vl      #+#    #+#                 */
-/*   Updated: 2024/02/21 17:52:15 by cavan-vl      ########   odam.nl         */
+/*   Updated: 2024/02/22 17:22:05 by cavan-vl      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@ to create a new string (with malloc(3)) resulting
 from successive applications of ’f’.
 */
 
-char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
+char	*ft_strmapi(char *s, char (*f)(unsigned int, char))
 {
 	int		i;
 	char	*str;

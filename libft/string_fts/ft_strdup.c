@@ -6,13 +6,13 @@
 /*   By: cavan-vl <cavan-vl@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2023/10/18 14:51:57 by cavan-vl      #+#    #+#                 */
-/*   Updated: 2024/02/21 18:29:43 by cavan-vl      ########   odam.nl         */
+/*   Updated: 2024/02/22 17:22:25 by cavan-vl      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../../inc/libft.h"
 
-char	*ft_strdup(const char *s)
+char	*ft_strdup(char *s)
 {
 	char	*dup;
 	int		i;

@@ -39,19 +39,19 @@ void	*ft_calloc(size_t nmemb, size_t size);
 
 char	**ft_split(char *s, char c);
 
-int		ft_strlen(const char *s);
-size_t	ft_strlcpy(char *dest, const char *src, size_t size);
-size_t	ft_strlcat(char *dest, const char *src, size_t size);
-char	*ft_strjoin(char const *s1, char const *s2);
-char	*ft_strrchr(const char *s, int c);
-char	*ft_strchr(const char *s, int c);
-char	*ft_strdup(const char *s);
-char	*ft_strtrim(char const *s1, char const *set);
+int		ft_strlen(char *s);
+size_t	ft_strlcpy(char *dest, char *src, size_t size);
+size_t	ft_strlcat(char *dest, char *src, size_t size);
+char	*ft_strjoin(char *s1, char *s2);
+char	*ft_strrchr(char *s, int c);
+char	*ft_strchr(char *s, int c);
+char	*ft_strdup(char *s);
+char	*ft_strtrim(char *s1, char *set);
 int		ft_strncmp(const char *s1, const char *s2, size_t n);
 void	ft_striteri(char *s, void (*f)(unsigned int, char*));
-char	*ft_strmapi(char const *s, char (*f)(unsigned int, char));
+char	*ft_strmapi(char *s, char (*f)(unsigned int, char));
 char	*ft_strnstr(const char *big, const char *little, size_t len);
-char	*ft_substr(char const *s, unsigned int start, size_t len);
+char	*ft_substr(char *s, unsigned int start, size_t len);
 
 /*===============================MEMORY================================*/
 
