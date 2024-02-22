@@ -6,7 +6,7 @@
 /*   By: cvan-vli <cvan-vli@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2023/01/16 15:38:11 by cvan-vli      #+#    #+#                 */
-/*   Updated: 2024/02/22 17:26:12 by cavan-vl      ########   odam.nl         */
+/*   Updated: 2024/02/22 17:43:05 by cavan-vl      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,6 +21,8 @@
 # include <stdio.h>
 # include <unistd.h>
 # include <limits.h>
+
+# include "libft.h"
 
 char	*read_buffs(char *static_buffer, int fd);
 char	*get_next_line(int fd);

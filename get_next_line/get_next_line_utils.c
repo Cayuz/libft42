@@ -6,23 +6,11 @@
 /*   By: cvan-vli <cvan-vli@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2023/01/16 11:36:10 by cvan-vli      #+#    #+#                 */
-/*   Updated: 2024/02/22 17:26:01 by cavan-vl      ########   odam.nl         */
+/*   Updated: 2024/02/22 17:43:34 by cavan-vl      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../inc/get_next_line.h"
-
-int	ft_strlen(char *str)
-{
-	int	i;
-
-	i = 0;
-	if (!str)
-		return (0);
-	while (str[i])
-		i++;
-	return (i);
-}
 
 char	*str_join(char *s1, char *s2)
 {
