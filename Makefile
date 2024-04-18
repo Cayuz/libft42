@@ -45,6 +45,7 @@ SRC_FILES	:=	$(addprefix $(SRC_CLASS), \
 				ft_split.c \
 				ft_itoa.c \
 				free_array.c \
+				copy_array.c \
 				) \
 				$(addprefix $(SRC_MEMORY), \
 				ft_memset.c \
