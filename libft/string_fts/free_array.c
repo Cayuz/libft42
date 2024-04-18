@@ -6,7 +6,7 @@
 /*   By: cavan-vl <cavan-vl@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2024/04/18 17:17:53 by cavan-vl      #+#    #+#                 */
-/*   Updated: 2024/04/18 17:20:07 by cavan-vl      ########   odam.nl         */
+/*   Updated: 2024/04/18 19:28:31 by cavan-vl      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@ void	free_array(char **array)
 	i = 0;
 	if (array)
 	{
-		while (array[i])
+		while (array && array[i])
 		{
 			free(array[i]);
 			i++;
