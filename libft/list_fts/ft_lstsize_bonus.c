@@ -6,7 +6,7 @@
 /*   By: cavan-vl <cavan-vl@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2023/10/22 17:50:23 by cavan-vl      #+#    #+#                 */
-/*   Updated: 2024/02/21 17:52:15 by cavan-vl      ########   odam.nl         */
+/*   Updated: 2024/04/18 17:15:07 by cavan-vl      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,9 +14,9 @@
 
 /*Counts the number of nodes in a list.*/
 
-int	ft_lstsize(t_list *lst)
+int	ft_lstsize(t_liblist *lst)
 {
-	t_list	*current;
+	t_liblist	*current;
 	int		i;
 
 	i = 0;

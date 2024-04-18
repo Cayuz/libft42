@@ -6,7 +6,7 @@
 /*   By: cavan-vl <cavan-vl@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2023/10/22 15:11:10 by cavan-vl      #+#    #+#                 */
-/*   Updated: 2024/02/21 18:30:40 by cavan-vl      ########   odam.nl         */
+/*   Updated: 2024/04/18 17:15:07 by cavan-vl      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,11 +17,11 @@ The member variable ’content’ is initialized with
 the value of the parameter ’content’. The variable
 ’next’ is initialized to NULL.*/
 
-t_list	*ft_lstnew(void *content)
+t_liblist	*ft_lstnew(void *content)
 {
-	t_list	*node;
+	t_liblist	*node;
 
-	node = (t_list *)malloc(sizeof(t_list));
+	node = (t_liblist *)malloc(sizeof(t_liblist));
 	if (node == NULL)
 		return (0);
 	node->content = content;

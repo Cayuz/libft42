@@ -6,7 +6,7 @@
 /*   By: cavan-vl <cavan-vl@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2023/10/22 17:54:09 by cavan-vl      #+#    #+#                 */
-/*   Updated: 2024/02/21 17:52:15 by cavan-vl      ########   odam.nl         */
+/*   Updated: 2024/04/18 17:15:07 by cavan-vl      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,9 +14,9 @@
 
 /*Adds the node ’new’ at the end of the list.*/
 
-void	ft_lstadd_back(t_list **lst, t_list *new)
+void	ft_lstadd_back(t_liblist **lst, t_liblist *new)
 {
-	t_list	*ptr;
+	t_liblist	*ptr;
 
 	if (*lst == NULL)
 	{

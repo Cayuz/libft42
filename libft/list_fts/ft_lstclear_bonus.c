@@ -6,7 +6,7 @@
 /*   By: cavan-vl <cavan-vl@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2023/10/22 17:58:36 by cavan-vl      #+#    #+#                 */
-/*   Updated: 2024/02/21 17:52:15 by cavan-vl      ########   odam.nl         */
+/*   Updated: 2024/04/18 17:15:07 by cavan-vl      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,10 +21,10 @@
 	NULL.
 */
 
-void	ft_lstclear(t_list **lst, void (*del)(void *))
+void	ft_lstclear(t_liblist **lst, void (*del)(void *))
 {
-	t_list	*current;
-	t_list	*next;
+	t_liblist	*current;
+	t_liblist	*next;
 
 	current = *lst;
 	if (!current || !del)

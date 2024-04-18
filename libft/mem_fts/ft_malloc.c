@@ -1,21 +1,24 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        ::::::::            */
-/*   ft_lstadd_front_bonus.c                            :+:    :+:            */
+/*   ft_malloc.c                                        :+:    :+:            */
 /*                                                     +:+                    */
 /*   By: cavan-vl <cavan-vl@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
-/*   Created: 2023/10/22 17:15:46 by cavan-vl      #+#    #+#                 */
-/*   Updated: 2024/04/18 17:15:07 by cavan-vl      ########   odam.nl         */
+/*   Created: 2024/04/18 17:11:23 by cavan-vl      #+#    #+#                 */
+/*   Updated: 2024/04/18 17:11:54 by cavan-vl      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../../inc/libft.h"
 
-/*Adds the node ’new’ at the beginning of the list.*/
-
-void	ft_lstadd_front(t_liblist **lst, t_liblist *new)
+// does this actually work if you type cast the call when mallocing an array?
+void	*ft_malloc(size_t size)
 {
-	new->next = *lst;
-	*lst = new;
+	void	*alloc;
+
+	alloc = malloc(size);
+	if (alloc == NULL)
+		error_msg("allocation failed");
+	return (alloc);
 }

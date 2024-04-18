@@ -6,7 +6,7 @@
 /*   By: cavan-vl <cavan-vl@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2023/10/22 17:52:41 by cavan-vl      #+#    #+#                 */
-/*   Updated: 2024/02/21 17:52:15 by cavan-vl      ########   odam.nl         */
+/*   Updated: 2024/04/18 17:15:07 by cavan-vl      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,9 +14,9 @@
 
 /*Returns the last node of the list.*/
 
-t_list	*ft_lstlast(t_list *lst)
+t_liblist	*ft_lstlast(t_liblist *lst)
 {
-	t_list	*temp;
+	t_liblist	*temp;
 
 	if (lst == NULL)
 		return (NULL);

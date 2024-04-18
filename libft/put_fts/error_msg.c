@@ -1,21 +1,19 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        ::::::::            */
-/*   ft_lstadd_front_bonus.c                            :+:    :+:            */
+/*   error_msg.c                                        :+:    :+:            */
 /*                                                     +:+                    */
 /*   By: cavan-vl <cavan-vl@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
-/*   Created: 2023/10/22 17:15:46 by cavan-vl      #+#    #+#                 */
-/*   Updated: 2024/04/18 17:15:07 by cavan-vl      ########   odam.nl         */
+/*   Created: 2024/04/18 17:13:52 by cavan-vl      #+#    #+#                 */
+/*   Updated: 2024/04/18 17:13:58 by cavan-vl      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../../inc/libft.h"
 
-/*Adds the node ’new’ at the beginning of the list.*/
-
-void	ft_lstadd_front(t_liblist **lst, t_liblist *new)
+int	error_msg(char *msg)
 {
-	new->next = *lst;
-	*lst = new;
+	printf("\033[1;31mError!\033[0m\n%s\n", msg);
+	exit(EXIT_FAILURE);
 }
