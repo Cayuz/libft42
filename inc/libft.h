@@ -52,6 +52,7 @@ void	ft_striteri(char *s, void (*f)(unsigned int, char*));
 char	*ft_strmapi(char *s, char (*f)(unsigned int, char));
 char	*ft_strnstr(const char *big, const char *little, size_t len);
 char	*ft_substr(char *s, unsigned int start, size_t len);
+void	free_array(char **array);
 
 /*===============================MEMORY================================*/
 
