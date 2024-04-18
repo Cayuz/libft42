@@ -20,14 +20,14 @@
 
 /*===============================CLASS================================*/
 
-int		ft_isalpha(int c);
-int		ft_isdigit(int d);
-int		ft_isalnum(int a);
-int		ft_isascii(int c);
-int		ft_isprint(int c);
+int	ft_isalpha(int c);
+int	ft_isdigit(int d);
+int	ft_isalnum(int a);
+int	ft_isascii(int c);
+int	ft_isprint(int c);
 
-int		ft_tolower(int c);
-int		ft_toupper(int c);
+int	ft_tolower(int c);
+int	ft_toupper(int c);
 
 /*===============================STRING================================*/
 
@@ -48,7 +48,7 @@ char	*ft_strchr(char *s, int c);
 char	*ft_strdup(char *s);
 char	*ft_strtrim(char *s1, char *set);
 int		ft_strncmp(const char *s1, const char *s2, size_t n);
-void	ft_striteri(char *s, void (*f)(unsigned int, char*));
+void	ft_striteri(char *s, void (*f)(unsigned int, char *));
 char	*ft_strmapi(char *s, char (*f)(unsigned int, char));
 char	*ft_strnstr(const char *big, const char *little, size_t len);
 char	*ft_substr(char *s, unsigned int start, size_t len);
@@ -75,18 +75,18 @@ int		error_msg(char *msg);
 
 typedef struct s_liblist
 {
-	void			*content;
+	void				*content;
 	struct s_liblist	*next;
 }	t_liblist;
 
-void	ft_lstadd_back(t_liblist **lst, t_liblist *new);
-void	ft_lstadd_front(t_liblist **lst, t_liblist *new);
-void	ft_lstclear(t_liblist **lst, void (*del)(void *));
-void	ft_lstdelone(t_liblist *lst, void (*del)(void*));
-void	ft_lstiter(t_liblist *lst, void (*f)(void *));
+void		ft_lstadd_back(t_liblist **lst, t_liblist *new);
+void		ft_lstadd_front(t_liblist **lst, t_liblist *new);
+void		ft_lstclear(t_liblist **lst, void (*del)(void *));
+void		ft_lstdelone(t_liblist *lst, void (*del)(void *));
+void		ft_lstiter(t_liblist *lst, void (*f)(void *));
 t_liblist	*ft_lstlast(t_liblist *lst);
 t_liblist	*ft_lstmap(t_liblist *lst, void *(*f)(void *), void (*del)(void *));
 t_liblist	*ft_lstnew(void *content);
-int		ft_lstsize(t_liblist *lst);
+int			ft_lstsize(t_liblist *lst);
 
 #endif

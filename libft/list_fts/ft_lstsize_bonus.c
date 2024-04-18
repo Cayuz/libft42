@@ -6,7 +6,7 @@
 /*   By: cavan-vl <cavan-vl@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2023/10/22 17:50:23 by cavan-vl      #+#    #+#                 */
-/*   Updated: 2024/04/18 17:15:07 by cavan-vl      ########   odam.nl         */
+/*   Updated: 2024/04/18 19:38:30 by cavan-vl      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@
 int	ft_lstsize(t_liblist *lst)
 {
 	t_liblist	*current;
-	int		i;
+	int			i;
 
 	i = 0;
 	current = lst;
