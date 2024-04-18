@@ -52,7 +52,7 @@ SRC_FILES	:=	$(addprefix $(SRC_CLASS), \
 				ft_memmove.c \
 				ft_memcmp.c \
 				ft_memchr.c \
-				ft_malloc. \
+				ft_malloc.c \
 				) \
 				$(addprefix $(SRC_OUTPUT), \
 				ft_putchar_fd.c \
