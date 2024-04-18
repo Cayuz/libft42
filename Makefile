@@ -44,6 +44,7 @@ SRC_FILES	:=	$(addprefix $(SRC_CLASS), \
 				ft_striteri.c \
 				ft_split.c \
 				ft_itoa.c \
+				free_array.c \
 				) \
 				$(addprefix $(SRC_MEMORY), \
 				ft_memset.c \
@@ -51,12 +52,14 @@ SRC_FILES	:=	$(addprefix $(SRC_CLASS), \
 				ft_memmove.c \
 				ft_memcmp.c \
 				ft_memchr.c \
+				ft_malloc. \
 				) \
 				$(addprefix $(SRC_OUTPUT), \
 				ft_putchar_fd.c \
 				ft_putnbr_fd.c \
 				ft_putendl_fd.c \
 				ft_putstr_fd.c \
+				error_msg.c \
 				) \
 				$(addprefix $(SRC_LIST), \
 				ft_lstadd_back_bonus.c \
