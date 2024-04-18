@@ -6,13 +6,13 @@
 /*   By: cavan-vl <cavan-vl@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2024/04/18 17:24:10 by cavan-vl      #+#    #+#                 */
-/*   Updated: 2024/04/18 17:41:40 by cavan-vl      ########   odam.nl         */
+/*   Updated: 2024/04/18 17:45:58 by cavan-vl      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../../inc/libft.h"
 
-void	copy_array(char **array, int size)
+char	**copy_array(char **array, int size)
 {
 	char	**copy;
 	int		i;
